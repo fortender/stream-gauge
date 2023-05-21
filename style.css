@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+.gauge {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 20px solid gray;
+    border-bottom: 0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gaugehand {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #333;
+    transform-origin: 50% 100%;
+    transition: transform 0.5s;
+}
